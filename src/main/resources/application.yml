@@ -1,12 +1,9 @@
-server:
-  port: 4210
-
 spring:
+  datasource:
+    url: "jdbc:postgresql://ec2-3-248-103-75.eu-west-1.compute.amazonaws.com:5432/d5s3oue7c2ikrj"
+    username: leueyidnrnhmlc
+    password: b95bd46873d374fe273f596f964f6331a4e8e9aa0644fdb84a696a4230ed2cc8
   liquibase:
     change-log: "classpath:db-migrations/changelog.xml"
     user: postgres
-    password: 1234
-  datasource:
-    url: "jdbc:postgresql://localhost:5432/postgres?currentSchema=car_driver"
-    username: postgres
     password: 1234
